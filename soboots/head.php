@@ -24,7 +24,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
           <div class="container">
 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="<? echo G5_URL ?>">
                 <img src="<? echo G5_THEME_IMG_URL ?>/logo.svg" alt="" style="width:180px">
             </a>
 

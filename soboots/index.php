@@ -184,7 +184,15 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
         <img src="<? echo G5_THEME_IMG_URL?>/main_visual_04.png" alt="" class="img1" data-aos="zoom-in" data-aos-duration="800">
         <img src="<? echo G5_THEME_IMG_URL?>/main_visual_char.png" alt="" class="img2" data-aos="fade-up" data-aos-duration="800">
-        
+    </div>
+    <div class="sec05 container">
+        <img src="<? echo G5_THEME_IMG_URL?>/main_visual_05.png" alt="" data-aos="zoom-in" data-aos-duration="800">
+        <div class="sec05_txt" data-aos="fade-left" data-aos-duration="800">
+            <h2><a href="#">Main Class 자신감 UP<br>예습도<img src="<? echo G5_THEME_IMG_URL?>/online.png" alt=""> 
+            복습도<img src="<? echo G5_THEME_IMG_URL?>/online.png" alt="">특별한 학습시스템</a></h2>
+            <p>본 수업 전/후 예복습 시스템과 숙제로 효과적인 확인학습을<br>
+            진행합니다. 혼자서도 척척! 자기주도 학습이 가능합니다.</p>
+        </div>
     </div>
 <script>
      AOS.init();

@@ -21,6 +21,11 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 ?>
 
 <!-- 상단 시작 { -->
+    <?php
+    if(defined('_INDEX_')) { // index에서만 실행
+        include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
+    }
+    ?>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
           <div class="container">
 
@@ -46,7 +51,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     ?>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="<?php echo $row['me_link']; ?>" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" target="_<?php echo $row['me_target']; ?>">
+                            <a class="nav-link" href="<?php echo $row['me_link']; ?>" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" target="_<?php echo $row['me_target']; ?>">
                                 <?php echo $row['me_name'] ?>
                             </a>
                             <!-- 서브 -->
@@ -97,9 +102,34 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 <hr>
 
 <!-- 콘텐츠 시작 { -->
+    <? if(!defined('_INDEX_')) { ?> 
+        <div class="container rounded-5 subView" id="page_title">
+
+        <div class="txtWrap d-flex flex-column align-items-center gap-3">
+            <h2 class="loc1D stitle text-white locTitle"></h2>
+            <div class="p-3 px-4 bg-dark rounded-5">
+                <ul class="d-flex text-white gap-3">
+                    <li><img src="<? echo G5_THEME_IMG_URL ?>/home_icon_white.png" alt=""></li>
+                    <li>></li>
+                    <li class="loc1D"></li>
+                    <li>></li>
+                    <li><?php echo get_head_title($g5['title']); ?></li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+    <? } ?>
+
+
+
     <? if(defined('_INDEX_')) { ?> 
         <div class="container_wr"> <!-- index이면 w:100% -->
     <? }else{ ?>
-        <div class="container"> <!-- index아니면 w:1400px -->
-    <? } ?>
+        <div class="container position-relative"> <!-- index아니면 w:1400px -->
+            <h2 id="container_title" class="stitle text-center py-3">
+                <span title="<?php echo get_text($g5['title']); ?>">
+                <?php echo get_head_title($g5['title']); ?></span>
+            </h2>
+        <? } ?>
     

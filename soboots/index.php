@@ -87,24 +87,189 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </div>
 </div>
-<div class="sec04 container" style="background-image: url(<? echo G5_THEME_IMG_URL?>/main_visual_bg02.png)";>
-    <div class="sec04_txt" data-aos="fade-right" data-aos-duration="800">
-        <h2><a href="#">외국인 선생님 +<br>한국인 선생님이 함께</a></h2>
-        <p>외국인 선생님과 수업할 때, 한국인 선생님도<br>
-        <span>옆에 함께</span>합니다. 더 이상 영어가 두렵지 않습니다.</p>
+<div class="sec04 container">
+    <img src="<? echo G5_THEME_IMG_URL?>/main_visual_bg02.png" alt="" class="sec04_bg">
+    <div class="row">
+        <div class="sec04_txt col-md-6" data-aos="fade-right" data-aos-duration="800">
+            <div class="sec04_wrap">
+                <h2><a href="#">외국인 선생님 +<br>한국인 선생님이 함께</a></h2>
+                <p>외국인 선생님과 수업할 때, 한국인 선생님도<br>
+                <span>옆에 함께</span>합니다. 더 이상 영어가 두렵지 않습니다.</p>
+            </div>
+        </div>
+        <div class="sec04_img col-md-6">
+                <img src="<? echo G5_THEME_IMG_URL?>/main_visual_04.png" alt="" class="img1" data-aos="zoom-in" data-aos-duration="800">
+        </div>
     </div>
-    <img src="<? echo G5_THEME_IMG_URL?>/main_visual_04.png" alt="" class="img1" data-aos="zoom-in" data-aos-duration="800">
-    <img src="<? echo G5_THEME_IMG_URL?>/main_visual_char.png" alt="" class="img2" data-aos="fade-up" data-aos-duration="800">
 </div>
 <div class="sec05 container">
     <img src="<? echo G5_THEME_IMG_URL?>/main_visual_05.png" alt="" data-aos="zoom-in" data-aos-duration="800">
     <div class="sec05_txt" data-aos="fade-left" data-aos-duration="800">
         <h2><a href="#">Main Class 자신감 UP<br>예습도<img src="<? echo G5_THEME_IMG_URL?>/online.png" alt=""> 
-        복습도<img src="<? echo G5_THEME_IMG_URL?>/online.png" alt="">특별한 학습시스템</a></h2>
+        복습도<img src="<? echo G5_THEME_IMG_URL?>/online.png" alt=""><br>특별한 학습시스템</a></h2>
         <p>본 수업 전/후 예복습 시스템과 숙제로 효과적인 확인학습을<br>
         진행합니다. 혼자서도 척척! 자기주도 학습이 가능합니다.</p>
     </div>
 </div>
+<div class="container cont">
+    <div class="row">
+        <div class="col-md-4">
+            <?php
+            // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
+            // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
+            // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
+            echo latest('theme/basic', 'notice', 5, 23);		// 최소설치시 자동생성되는 갤러리게시판
+            ?>
+        </div>
+        <div class="col-md-4 p-4">
+            <?php
+            echo latest('theme/basic', 'notice', 5, 23);		// 최소설치시 자동생성되는 갤러리게시판
+            ?>   
+        </div>
+        <div class="col-md-4 p-4">
+            <?php
+            echo latest('theme/basic', 'notice', 5, 23);		// 최소설치시 자동생성되는 갤러리게시판
+            ?>   
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    /* slickslide1 */
+    .slickslide1 .prev,.slickslide1 .next{
+        cursor: pointer;
+    }
+    .slickslide1 img.prev,.slickslide1 img.next{
+        position: absolute;
+        top: 50%;transform:translateY(-50%)
+    }
+    .slickslide1 img.prev{left: -50px;}
+    .slickslide1 img.next{right: -50px;}
+    .slickslide1 .sItem{
+        padding: 5px;opacity: 0.5;transition:.3s;
+        transform:scale(0.8);
+    }
+    .slickslide1 .sItem.slick-center{
+        padding: 5px;opacity: 1;
+        transform:scale(1)
+    }
+
+    /* slickslide2 */
+    .slickslide2 .prev,.slickslide2 .next{
+        cursor: pointer;
+    }
+    .slickslide2 img.prev,.slickslide2 img.next{
+        position: absolute;
+        top: 50%;transform:translateY(-50%)
+    }
+    .slickslide2 img.prev{left: -50px;}
+    .slickslide2 img.next{right: -50px;}
+    .slickslide2 .sItem{
+        padding: 5px;opacity: 0.5;transition:.3s;
+        transform:scale(0.8);
+    }
+    .slickslide2 .sItem.slick-center{
+        padding: 5px;opacity: 1;
+        transform:scale(1)
+    }
+
+</style>
+
+<div class="container position-relative">
+    <img src="<? echo G5_THEME_IMG_URL ?>/3.png" alt="" class="prev d-none d-md-block">
+    <img src="<? echo G5_THEME_IMG_URL ?>/1.png" alt="" class="next d-none d-md-block">
+    <div class="slickslide1">
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img1.jpg" alt="" class="img-fluid">
+        </div>
+        <div  class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img2.jpg" alt="" class="img-fluid">
+        </div>
+        <div  class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img3.jpg" alt="" class="img-fluid">
+        </div>
+        <div  class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img4.jpg" alt="" class="img-fluid">
+        </div>
+        <div  class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img5.jpg" alt="" class="img-fluid">
+        </div>
+        <div  class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img6.jpg" alt="" class="img-fluid">
+        </div>
+        <div  class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img7.jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+
+<div class="container position-relative">
+    <img src="<? echo G5_THEME_IMG_URL ?>/3.png" alt="" class="prev d-none d-md-block">
+    <img src="<? echo G5_THEME_IMG_URL ?>/1.png" alt="" class="next d-none d-md-block">
+    <div class="slickslide2">
+        <?php
+            echo latest('theme/pic_sy', 'gallery', 7, 23);		// 최소설치시 자동생성되는 갤러리게시판
+        ?>
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+<script>
+    $('.slickslide1').slick({
+        centerMode: true,
+        slidesToShow: 3,
+        nextArrow:$(".slickslide1 .next"),
+        prevArrow:$(".slickslide1 .prev"),
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                centerMode: true,
+                slidesToShow: 1
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                centerMode: true,
+                slidesToShow: 1
+            }
+            }
+        ]
+    });
+
+    $('.slickslide2').slick({
+        centerMode: true,
+        slidesToShow: 3,
+        nextArrow:$(".slickslide2 .next"),
+        prevArrow:$(".slickslide2 .prev"),
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                centerMode: true,
+                slidesToShow: 1
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                centerMode: true,
+                slidesToShow: 1
+            }
+            }
+        ]
+    });
+</script>
 <script>
      AOS.init();
 </script>

@@ -4,9 +4,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
 
 $co_id = "location";
-$menuNum = "1"; // 수정 부분
-$menuNum2 = "3"; // 수정 부분
-$g5['title'] = "오시는길";
+$menuNum = "2"; // 수정 부분
+$menuNum2 = "2"; // 수정 부분
+$g5['title'] = "무료체험";
 
 include_once(G5_THEME_PATH.'/head.php');
 ?>
@@ -17,7 +17,7 @@ $(document).ready(function(){
    });
 </script>
 
-오시는길
+<img src="<? echo G5_THEME_IMG_URL ?>/sub02_01.JPG" alt="" class="d-block mx-auto">
 
 
 <?php

@@ -131,11 +131,8 @@ include_once(G5_THEME_PATH.'/head.php');
                     <h3><a href="#">학습 결과 보고서</a></h3>
                     <p>Daily Class Report</p>
                 </div>
-                <div class="item_hover">
-                    <p>학습자의 학업 점수와 학습내용을 요약한 보고서를 발송합니다.</p>
-                </div>
+                <p>학습자의 학업 점수와 학습내용을 요약한 보고서를 발송합니다.</p>
             </div>
-            
         </div>
         <div class="col-lg-3">
             <div class="origin">
@@ -222,41 +219,202 @@ include_once(G5_THEME_PATH.'/head.php');
             </div>
         </div>
     </div>
-
 </div>
-
-
-
-
-
-
-
-<div class="container cont">
-    <div class="row">
-        <div class="col-md-4">
-            <?php
-            // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
-            // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
-            // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
-            echo latest('theme/basic', 'notice', 5, 23);		// 최소설치시 자동생성되는 갤러리게시판
-            ?>
+<div class="container position-relative slickslide">
+    <h2 class="text-center">갤러리</h2>
+    <img src="<? echo G5_THEME_IMG_URL ?>/3.png" alt="" class="prev">
+    <img src="<? echo G5_THEME_IMG_URL ?>/1.png" alt="" class="next">
+    <div class="slide">
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/slide1.png" alt="" class="img-fluid">
         </div>
-        <div class="col-md-4 p-4">
-            <?php
-            echo latest('theme/basic', 'notice', 5, 23);		// 최소설치시 자동생성되는 갤러리게시판
-            ?>   
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/slide2.png" alt="" class="img-fluid">
         </div>
-        <div class="col-md-4 p-4">
-            <?php
-            echo latest('theme/basic', 'notice', 5, 23);		// 최소설치시 자동생성되는 갤러리게시판
-            ?>   
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/slide3.png" alt="" class="img-fluid">
+        </div>
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/slide4.png" alt="" class="img-fluid">
+        </div>
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/slide5.png" alt="" class="img-fluid">
+        </div>
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/slide6.png" alt="" class="img-fluid">
+        </div>
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/slide7.png" alt="" class="img-fluid">
+        </div>
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/slide8.png" alt="" class="img-fluid">
+        </div>
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/slide9.png" alt="" class="img-fluid">
+        </div>
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/slide10.png" alt="" class="img-fluid">
         </div>
     </div>
 </div>
+
+<div class="sec07Wrap">
+    <div class="sec07 container">
+        <h2 class="text-center">체험 수업 후기</h2>
+        <ul>
+            <li data-aos="fade-up" data-aos-duration="800">
+                <img src="<? echo G5_THEME_IMG_URL?>/main_review01.png" alt="">
+                <div class="txtWrap">
+                    <h4>저희 아이에게 아주 딱 맞는 수업 <img src="<? echo G5_THEME_IMG_URL?>/main_review_icon01.png" alt=""></h4>
+                    <p> 아이 친구네와 함께 체험 수업을 신청했는데,
+                                너무 재미있어 합니다.
+                                수업이 끝난 후 또 하고 싶다고 해서 정규 수업 등록을 고민하고 있어요~~
+                                선생님께서 아이의 수준에 맞춰 수업을 진행해주시고 재미있게 이끌어
+                                주셔서 저희 아이에게 아주 딱 맞는 수업이었습니다^^
+                            </p>
+                </div>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="800">
+                <img src="<? echo G5_THEME_IMG_URL?>/main_review02.png" alt="">
+                <div class="txtWrap">
+                    <h4>레몬 추천합니다!!! :) <img src="<? echo G5_THEME_IMG_URL?>/main_review_icon02.png" alt=""></h4>
+                    <p>
+                                저희 아이는 온라인 수업을 자주 듣곤 하는데, 생각했
+                                던 일반 화상 수업과 달리 기능이 너무 다양하고 정교
+                                해서 정말 놀랐어요~!! 수업 내용도 흥미로웠고, 강사
+                                분들의 실력도 믿음직스러웠습니다. 만족해요~~
+                                레몬 추천합니다!!! :)
+    
+                            </p>
+                </div>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="800">
+                <img src="<? echo G5_THEME_IMG_URL?>/main_review03.png" alt="">
+                <div class="txtWrap">
+                    <h4>영어가 좋아졌대요.</h4>
+                    <p>
+                                영어 수업도 처음이고 온라인 수업도 처음인 저희 아
+                                이가 체험 수업을 듣고 영어가 좋아졌대요. 선생님들
+                                도 좋고, 수업 내내 너무 재미있었다고 합니다~ 걱정
+                                했는데 아이가 이렇게 좋아할 줄은 몰랐습니다. 레몬
+                                감사해요^-^
+    
+                            </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+<!-- <div class="container cont">
+    <div class="row">
+        <div class="col-md-4">
+            //<?php
+            // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
+            // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
+            // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
+            //echo latest('theme/basic', 'notice', 5, 23);		// 최소설치시 자동생성되는 갤러리게시판
+            //?>
+        </div>
+        <div class="col-md-4 p-4">
+            //<?php
+           // echo latest('theme/basic', 'notice', 5, 23);		// 최소설치시 자동생성되는 갤러리게시판
+            //?>   
+        </div>
+        <div class="col-md-4 p-4">
+            //<?php
+            //echo latest('theme/basic', 'notice', 5, 23);		// 최소설치시 자동생성되는 갤러리게시판
+            //?>   
+        </div>
+    </div>
+</div> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<style>
+<!--  -->
+
+
+<script>
+$('.slide').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  nextArrow:$(".next"),
+  prevArrow:$(".prev"),
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+</script>
+<script>
+     AOS.init();
+</script>
+
+
+<!-- <div class="container position-relative">
+    <img src="<? echo G5_THEME_IMG_URL ?>/3.png" alt="" class="prev d-none d-md-block">
+    <img src="<? echo G5_THEME_IMG_URL ?>/1.png" alt="" class="next d-none d-md-block">
+    <div class="slickslide1">
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img1.jpg" alt="" class="img-fluid">
+        </div>
+        <div  class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img2.jpg" alt="" class="img-fluid">
+        </div>
+        <div  class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img3.jpg" alt="" class="img-fluid">
+        </div>
+        <div  class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img4.jpg" alt="" class="img-fluid">
+        </div>
+        <div  class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img5.jpg" alt="" class="img-fluid">
+        </div>
+        <div  class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img6.jpg" alt="" class="img-fluid">
+        </div>
+        <div  class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img7.jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+</div> -->
+
+
+<!-- <div class="container position-relative">
+    <img src="<? echo G5_THEME_IMG_URL ?>/3.png" alt="" class="prev d-none d-md-block">
+    <img src="<? echo G5_THEME_IMG_URL ?>/1.png" alt="" class="next d-none d-md-block">
+    <div class="slickslide2">
+        <?php
+            echo latest('theme/pic_sy', 'gallery', 7, 23);		// 최소설치시 자동생성되는 갤러리게시판
+        ?>
+    </div>    
+</div> -->
+
+
+
+
+
+<!-- <style>
     /* slickslide1 */
     .slickslide1 .prev,.slickslide1 .next{
         cursor: pointer;
@@ -295,55 +453,10 @@ include_once(G5_THEME_PATH.'/head.php');
         transform:scale(1)
     }
 
-</style>
-
-<div class="container position-relative">
-    <img src="<? echo G5_THEME_IMG_URL ?>/3.png" alt="" class="prev d-none d-md-block">
-    <img src="<? echo G5_THEME_IMG_URL ?>/1.png" alt="" class="next d-none d-md-block">
-    <div class="slickslide1">
-        <div class="sItem">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img1.jpg" alt="" class="img-fluid">
-        </div>
-        <div  class="sItem">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img2.jpg" alt="" class="img-fluid">
-        </div>
-        <div  class="sItem">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img3.jpg" alt="" class="img-fluid">
-        </div>
-        <div  class="sItem">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img4.jpg" alt="" class="img-fluid">
-        </div>
-        <div  class="sItem">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img5.jpg" alt="" class="img-fluid">
-        </div>
-        <div  class="sItem">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img6.jpg" alt="" class="img-fluid">
-        </div>
-        <div  class="sItem">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img7.jpg" alt="" class="img-fluid">
-        </div>
-    </div>
-</div>
+</style> -->
 
 
-<div class="container position-relative">
-    <img src="<? echo G5_THEME_IMG_URL ?>/3.png" alt="" class="prev d-none d-md-block">
-    <img src="<? echo G5_THEME_IMG_URL ?>/1.png" alt="" class="next d-none d-md-block">
-    <div class="slickslide2">
-        <?php
-            echo latest('theme/pic_sy', 'gallery', 7, 23);		// 최소설치시 자동생성되는 갤러리게시판
-        ?>
-    </div>    
-</div>
-
-
-
-
-
-
-
-
-<script>
+<!-- <script>
     $('.slickslide1').slick({
         centerMode: true,
         slidesToShow: 3,
@@ -389,10 +502,8 @@ include_once(G5_THEME_PATH.'/head.php');
             }
         ]
     });
-</script>
-<script>
-     AOS.init();
-</script>
+</script> -->
+
 
 <?php
 include_once(G5_THEME_PATH.'/tail.php');

@@ -18,11 +18,39 @@ if(G5_COMMUNITY_USE === false) {
 <hr>
 
 <!-- 하단 시작 { -->
-<div class="bg-dark">
+<footer>
+    <div class="f_top">
+        <div class="footer container">
+            <div class="navBottom">
+                <ul class="bottom">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">영상정보처리기기 운영방침</a></li>
+                </ul>
+            </div>
+            <div class="navIcon">
+                <ul class="icon">
+                    <li><a href="#"><img src="<? echo G5_THEME_IMG_URL?>/blog.png" alt=""></a></li>
+                    <li><a href="#"><img src="<? echo G5_THEME_IMG_URL?>/Insta.png" alt=""></a></li>
+                    <li><a href="#"><img src="<? echo G5_THEME_IMG_URL?>/youtube.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="f_bottom container">
+        <p><span>사업자등록번호</span> 101-81-92326 <span>대표이사</span> 화찬권 <span>통신판매업신고번호</span></p>
+        <p>제 01-985호 <span>TEL</span> 1670-7978 <span>FAX</span></p>
+        <p>02-2260-4410 <span>E-mail</span> ybmky@ybm.co.kr <span>서울특별시 종로구 창경궁로 112-7 (주)YBM교육</span></p>
+        <p>Copyright © ㈜YBM교육. All rights reserved.</p> 
+    </div>
+</footer>
+
+<!-- <div class="bg-dark">
     <div class="container py-5 text-center text-white">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, dignissimos?
     </div>
-</div>
+</div> -->
 
 <?php
 if(G5_DEVICE_BUTTON_DISPLAY && !G5_IS_MOBILE) { ?>

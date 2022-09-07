@@ -87,18 +87,20 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </div>
 </div>
-<div class="sec04 container">
-    <img src="<? echo G5_THEME_IMG_URL?>/main_visual_bg02.png" alt="" class="sec04_bg">
-    <div class="row">
-        <div class="sec04_txt col-md-6" data-aos="fade-right" data-aos-duration="800">
-            <div class="sec04_wrap">
-                <h2><a href="#">외국인 선생님 +<br>한국인 선생님이 함께</a></h2>
-                <p>외국인 선생님과 수업할 때, 한국인 선생님도<br>
-                <span>옆에 함께</span>합니다. 더 이상 영어가 두렵지 않습니다.</p>
+<div class="sec04_w">
+    <div class="sec04 container">
+        <img src="<? echo G5_THEME_IMG_URL?>/main_visual_bg02.png" alt="" class="sec04_bg">
+        <div class="row">
+            <div class="sec04_txt col-md-6" data-aos="fade-right" data-aos-duration="800">
+                <div class="sec04_wrap">
+                    <h2><a href="#">외국인 선생님 +<br>한국인 선생님이 함께</a></h2>
+                    <p>외국인 선생님과 수업할 때, 한국인 선생님도<br>
+                    <span>옆에 함께</span>합니다. 더 이상 영어가 두렵지 않습니다.</p>
+                </div>
             </div>
-        </div>
-        <div class="sec04_img col-md-6">
-            <img src="<? echo G5_THEME_IMG_URL?>/main_visual_04.png" alt="" class="img1" data-aos="zoom-in" data-aos-duration="800">
+            <div class="sec04_img col-md-6">
+                <img src="<? echo G5_THEME_IMG_URL?>/main_visual_04.png" alt="" class="img1" data-aos="zoom-in" data-aos-duration="800">
+            </div>
         </div>
     </div>
 </div>
@@ -123,103 +125,125 @@ include_once(G5_THEME_PATH.'/head.php');
     <img src="<? echo G5_THEME_IMG_URL?>/graph.png" alt="" data-aos="zoom-in" data-aos-duration="800">
 </div>
 <div class="sec06_item container">
-    <div class="row">
-        <div class="col-lg-3">
+    <div class="row item_top">
+        <div class="col-lg-3 o_wrap">
             <div class="origin">
-                <div class="icon report"></div>
-                <div class="txt">
-                    <h3><a href="#">학습 결과 보고서</a></h3>
-                    <p>Daily Class Report</p>
+                <div class="txtWrap">
+                    <div class="icon report"></div>
+                    <div class="txt">
+                        <h3><a href="#">학습 결과 보고서</a></h3>
+                        <p>Daily Class Report</p>
+                    </div>
                 </div>
-                <p>학습자의 학업 점수와 학습내용을 요약한 보고서를 발송합니다.</p>
+                <div class="hover_item">
+                    <p>학습자의 학업 점수와 학습내용을 요약한 보고서를 발송합니다.</p>
+                </div>
             </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 o_wrap">
             <div class="origin">
-                <div class="icon test"></div>
-                <div class="txt">
-                    <h3><a href="#">성취도 테스트</a></h3>
-                    <p>Achievement Test</p>
+                <div class="txtWrap">
+                    <div class="icon report"></div>
+                    <div class="txt">
+                        <h3><a href="#">성취도 테스트</a></h3>
+                        <p>Achievement Test</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item_hover">
-                <p>3개월에 한번씩 학습자의 성취도를 평가하여 피드백을 제공합니다.</p>
+                <div class="hover_item">
+                    <p>3개월에 한번씩 학습자의 성취도를 평가하여 피드백을 제공합니다.</p>
+                </div>
             </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 o_wrap">
             <div class="origin">
-                <div class="icon solution"></div>
-                <div class="txt">
-                    <h3><a href="#">화상솔루션</a></h3>
-                    <p>Online Learning Solutions</p>
+                <div class="txtWrap">
+                    <div class="icon report"></div>
+                    <div class="txt">
+                        <h3><a href="#">화상솔루션</a></h3>
+                        <p>Online Learning Solutions</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item_hover">
-                <p>YBM에서 직접 개발한 화상솔루션과 교안으로 수업을 진행합니다.</p>
+                <div class="hover_item">
+                    <p>YBM에서 직접 개발한 화상솔루션과 교안으로 수업을 진행합니다.</p>
+                </div>
             </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 o_wrap">
             <div class="origin">
-                <div class="icon homework"></div>
-                <div class="txt">
-                    <h3><a href="#">온ㆍ오프라인 숙제관리</a></h3>
-                    <p>Homework</p>
+                <div class="txtWrap">
+                    <div class="icon report"></div>
+                    <div class="txt">
+                        <h3><a href="#">온ㆍ오프라인 숙제관리</a></h3>
+                        <p>Homework</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item_hover">
-                <p>수업 후 온라인ㆍ오프라인 숙제를 진행하여 학습 효과를 높입니다.</p>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="origin">
-                <div class="icon attendance"></div>
-                <div class="txt">
-                    <h3><a href="#">출결관리</a></h3>
-                    <p>Attendance</p>
+                <div class="hover_item">
+                    <p>수업 후 온라인ㆍ오프라인 숙제를 진행하여 학습 효과를 높입니다.</p>
                 </div>
-            </div>
-            <div class="item_hover">
-                <p>학습자의 출결 상황을 한 눈에 파악할 수 있습니다.</p>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="origin">
-                <div class="icon counsel"></div>
-                <div class="txt">
-                    <h3><a href="#">정기상담관리</a></h3>
-                    <p>Regular Consulting</p>
-                </div>
-            </div>
-            <div class="item_hover">
-                <p>학부모 정기 상담을 통해 아이의 학습 성취를 관리하고 학습 목표를 달성하도록 합니다.</p>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="origin">
-                <div class="icon alert"></div>
-                <div class="txt">
-                    <h3><a href="#">모바일 알림</a></h3>
-                    <p>Notifications</p>
-                </div>
-            </div>
-            <div class="item_hover">
-                <p>Mobile에서 아이의 학습현황을 실시간으로 조회하고 알림을 받습니다.</p>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="origin">
-                <div class="icon point"></div>
-                <div class="txt">
-                    <h3><a href="#">포인트 제도</a></h3>
-                    <p>Reward System</p>
-                </div>
-            </div>
-            <div class="item_hover">
-                <p>학습 보상으로 지급되는 Point는 학습 동기를 부여합니다.</p>
             </div>
         </div>
     </div>
+    <div class="row item_bottom">
+            <div class="col-lg-3 o_wrap">
+                <div class="origin">
+                    <div class="txtWrap">
+                        <div class="icon report"></div>
+                        <div class="txt">
+                            <h3><a href="#">출결관리</a></h3>
+                            <p>Attendance</p>
+                        </div>
+                    </div>
+                    <div class="hover_item">
+                        <p>학습자의 출결 상황을 한 눈에 파악할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 o_wrap">
+                <div class="origin">
+                    <div class="txtWrap">
+                        <div class="icon report"></div>
+                        <div class="txt">
+                            <h3><a href="#">정기상담관리</a></h3>
+                            <p>Regular Consulting</p>
+                        </div>
+                    </div>
+                    <div class="hover_item">
+                        <p>학부모 정기 상담을 통해 아이의 학습 성취를 관리하고 학습 목표를 달성하도록 합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 o_wrap">
+                <div class="origin">
+                    <div class="txtWrap">
+                        <div class="icon report"></div>
+                        <div class="txt">
+                            <h3><a href="#">모바일 알림</a></h3>
+                            <p>Notifications</p>
+                        </div>
+                    </div>
+                    <div class="hover_item">
+                        <p>Mobile에서 아이의 학습현황을 실시간으로 조회하고 알림을 받습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 o_wrap">
+                <div class="origin">
+                    <div class="txtWrap">
+                        <div class="icon report"></div>
+                        <div class="txt">
+                            <h3><a href="#">포인트 제도</a></h3>
+                            <p>Reward System</p>
+                        </div>
+                    </div>
+                    <div class="hover_item">
+                        <p>학부모 정기 상담을 통해 아이의 학습 성취를 관리하고 학습 목표를 달성하도록 합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
 </div>
+
 <div class="container position-relative slickslide">
     <h2 class="text-center">갤러리</h2>
     <img src="<? echo G5_THEME_IMG_URL ?>/3.png" alt="" class="prev">

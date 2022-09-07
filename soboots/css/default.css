@@ -173,47 +173,61 @@ span{color:green;font-weight:bold}
 }
 
 /* sec06_item */
+.origin{
+  position: relative;margin-bottom: 20px;z-index: 20;}
 .origin h3{font-size: 18px;font-weight: bold;}
 .origin p{
   margin-top: 0;
   font-size: 17px;color:gray;
   font-weight: bold;
 }
-.origin::after{
-  content:"";display: block;clear: both;
-  width: 100%;height:100%;
-  position: absolute;
-  top: 0;left: 0;
+.item_top{
+  position: relative;
+  z-index: 21;
 }
-.origin:hover:after{
-  top: 80px;
-}
-
-
-.origin .txt{margin-left: 25px;}
-.origin{
+.sec06_item .txtWrap{
   display: flex;
-  align-items: center;
   border-radius: 15px;
   height: 109px;
   padding-left:30px;
   box-shadow: 0 10px 20px rgb(0,0,0,.1);
   position: relative;
-  transition: .3s;
+  align-items: center;
+  gap:20px;
+  background: #fff;
+  z-index: 19;
+} 
+
+.sec06_item .hover_item{
+  background:#00b388;
+  width: 100%;
+  height: 109px;
+  border-radius: 15px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;left: 0;
+  transition: 0.3s;
 }
-.item{position: absolute;}
-.origin:hover{
+.sec06_item .hover_item p{
+  color:#fff;font-size: 15px;
+  padding: 40px 15px 20px 15px;
+}
+.sec06_item .origin:hover .hover_item{
+  opacity: 1;
+  top: 80px;
+}
+.sec06_item .origin:hover .txtWrap{
   background: #008062;
-  border: 1px solid rgb(30, 74, 31);
-  z-index: 1;
+  border: 1px solid #006c53;
 }
-.origin:hover .icon{
-  background-position: 0 -32px;
-}
+
 .origin .icon{
   width: 32px;height: 32px;
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+.origin:hover .icon{
+  background-position: 0 -32px;
 }
 .origin .report{
   background-image: url(../img/main_icon_report.png);
@@ -239,20 +253,6 @@ span{color:green;font-weight:bold}
 .origin .point{
   background-image: url(../img/main_icon_point.png);
 }
-
-.item_hover{
-  background:#00b388;
-  height: 109px;
-  position: absolute;
-  top: 0;left: 0;
-  border-radius: 15px;
-}
-.item_hover:hover{
-  top: 80px;
-}
-
-
-
 
 
 
@@ -698,6 +698,7 @@ box-sizing:content-box;
   p{
     font-size: 17px;
   }
+
   /* sec03 */
   .sec03_img .bg_img{
     width: 400px;height: 320px;
@@ -709,6 +710,22 @@ box-sizing:content-box;
   .sec03_wrap{
     padding: 30px 0;
     margin-left: 30px;
+  }
+
+  /* sec04 */
+  .sec04_img img{
+    width: 500px;height: 320px;
+  }
+  .sec04_bg{display: none;}
+  .sec04_w{
+    background: #cef5f5;
+    padding: 150px 0;
+  }
+  .sec04_wrap{order:1}
+  .sec04_img{order:2}
+  /* sec05 */
+  .sec05_img img{
+    width: 500px;height: 420px;
   }
 }
 
@@ -769,6 +786,8 @@ box-sizing:content-box;
   .sec03_img .rot_img{
     display: none;
   }
+
+  /* sec04 */
 
 }
 
